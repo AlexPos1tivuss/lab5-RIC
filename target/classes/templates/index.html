@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: html(~{::title}, ~{::main})}">
+<head>
+    <title>Главная - Банковские депозиты</title>
+</head>
+<body>
+    <main>
+        <div class="jumbotron bg-light p-5 rounded">
+            <div class="container">
+                <h1 class="display-4"><i class="fas fa-university"></i> Система управления депозитами</h1>
+                <p class="lead">Добро пожаловать в банковскую систему управления депозитами. Здесь вы можете открывать депозиты, отслеживать баланс, рассчитывать проценты и управлять своими вкладами.</p>
+                <hr class="my-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3><i class="fas fa-user-plus text-primary"></i> Новый клиент?</h3>
+                        <p>Зарегистрируйтесь в системе для доступа ко всем возможностям управления депозитами.</p>
+                        <a class="btn btn-primary btn-lg" href="/clients/register" role="button">
+                            <i class="fas fa-user-plus"></i> Регистрация
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <h3><i class="fas fa-piggy-bank text-success"></i> Депозитные продукты</h3>
+                        <p>Ознакомьтесь с нашими депозитными продуктами и выберите наиболее подходящий.</p>
+                        <a class="btn btn-success btn-lg" href="/deposits/products" role="button">
+                            <i class="fas fa-piggy-bank"></i> Посмотреть депозиты
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-calculator fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Калькулятор доходности</h5>
+                        <p class="card-text">Рассчитайте потенциальную доходность ваших вкладов на любую дату.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-chart-line fa-3x text-success mb-3"></i>
+                        <h5 class="card-title">История операций</h5>
+                        <p class="card-text">Полная история всех операций по вашим депозитам с возможностью формирования отчётов.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-shield-alt fa-3x text-info mb-3"></i>
+                        <h5 class="card-title">Безопасность</h5>
+                        <p class="card-text">Ваши средства защищены современными технологиями безопасности.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
